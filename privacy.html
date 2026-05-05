@@ -6,232 +6,232 @@
   <title>Alwisal - Privacy Policy</title>
   <meta name="description" content="Alwisal Privacy Policy (Arabic, English, Turkish)" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.7; color: #111; }
-    .container { max-width: 900px; margin: 0 auto; }
-    .lang-switch { margin-bottom: 16px; }
-    .lang-switch button {
-      margin: 4px; padding: 8px 12px; border: 1px solid #bbb; background: #f8f8f8; cursor: pointer;
+    :root{
+      --bg:#080808;
+      --card:#111111;
+      --line:#252525;
+      --text:#f4f4f6;
+      --muted:#a1a1aa;
+      --primary:#7B2FBE;
+      --accent:#E8762A;
     }
-    .lang-switch button.active { background: #222; color: #fff; border-color: #222; }
-    .section { margin-bottom: 14px; }
-    .hidden { display: none; }
-    h1 { margin-bottom: 8px; }
-    h2 { margin-top: 20px; margin-bottom: 8px; font-size: 20px; }
-    ul { margin-top: 6px; }
-    .meta { font-size: 14px; color: #444; margin-bottom: 14px; }
-    .footer { margin-top: 24px; font-size: 13px; color: #555; }
-    a { color: #0b57d0; }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:radial-gradient(1200px 500px at 50% -120px,#1a0a2e 0%,var(--bg) 60%);
+      color:var(--text);
+      font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+      line-height:1.85;
+    }
+    .wrap{max-width:980px;margin:28px auto;padding:0 16px 24px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+    .lang-switch{display:flex;gap:8px;flex-wrap:wrap}
+    .lang-btn{
+      border:1px solid var(--line);background:#151515;color:#d4d4d8;
+      border-radius:12px;padding:8px 12px;cursor:pointer;font-size:13px;font-weight:600
+    }
+    .lang-btn.active{border-color:var(--primary);background:var(--primary);color:#fff;box-shadow:0 6px 18px rgba(123,47,190,.35)}
+    .card{
+      background:linear-gradient(180deg,#121212 0%,#0f0f10 100%);
+      border:1px solid var(--line);border-radius:18px;overflow:hidden;
+      box-shadow:0 18px 36px rgba(0,0,0,.35)
+    }
+    .hero{
+      padding:22px 22px 18px;border-bottom:1px solid #1d1d1f;
+      background:linear-gradient(180deg,rgba(123,47,190,.18),rgba(123,47,190,.04))
+    }
+    .brand{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .logo{
+      width:52px;height:52px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
+      background:#0f0f14;object-fit:cover;box-shadow:0 6px 16px rgba(0,0,0,.35)
+    }
+    .app-name{font-size:20px;font-weight:700;margin:0}
+    .subtitle{margin:2px 0 0;color:#c5c5d0;font-size:13px}
+    .meta{color:#bbbbc7;font-size:13px;margin-top:12px}
+    .content{padding:20px 22px 24px}
+    h1{margin:0 0 8px;font-size:28px;line-height:1.35}
+    h2{
+      margin:26px 0 10px;font-size:20px;line-height:1.4;color:#fff;
+      border-right:3px solid var(--primary);padding-right:10px
+    }
+    [dir="ltr"] h2{border-right:0;border-left:3px solid var(--primary);padding-right:0;padding-left:10px}
+    p,li{color:var(--muted);font-size:16px;margin:0 0 10px}
+    strong{color:var(--text)}
+    ul{margin:8px 0 0;padding-inline-start:22px}
+    a{color:var(--accent);text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+    .note{
+      margin-top:10px;border:1px solid rgba(232,118,42,.35);background:rgba(232,118,42,.07);
+      border-radius:12px;padding:10px 12px;color:#f2d5c2;font-size:14px
+    }
+    .footer{margin-top:26px;padding-top:14px;border-top:1px dashed #2a2a2f;color:#9393a1;font-size:13px}
+    .hidden{display:none}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="lang-switch">
-      <button type="button" data-lang="ar" class="active">العربية</button>
-      <button type="button" data-lang="en">English</button>
-      <button type="button" data-lang="tr">Türkçe</button>
+  <main class="wrap">
+    <div class="topbar">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="ar" type="button">العربية</button>
+        <button class="lang-btn" data-lang="en" type="button">English</button>
+        <button class="lang-btn" data-lang="tr" type="button">Türkçe</button>
+      </div>
     </div>
 
     <!-- Arabic -->
-    <section id="ar" class="policy" lang="ar" dir="rtl">
-      <h1>سياسة الخصوصية</h1>
-      <div class="meta">
-        تطبيق: <strong>Alwisal</strong><br />
-        الجهة المالكة: <strong>عبدالله حمشو (مطور مستقل)</strong><br />
-        تاريخ آخر تحديث: <strong>05/05/2026</strong>
+    <section id="policy-ar" class="card policy-block" lang="ar" dir="rtl">
+      <div class="hero">
+        <div class="brand">
+          <img class="logo" src="./alwisal-logo.png" alt="Alwisal Logo" />
+          <div>
+            <p class="app-name">Alwisal</p>
+            <p class="subtitle">سياسة الخصوصية</p>
+          </div>
+        </div>
+        <div class="meta">
+          الجهة المالكة: عبدالله حمشو (مطور مستقل)<br />
+          آخر تحديث: 05/05/2026
+        </div>
       </div>
+      <div class="content">
+        <h1>سياسة الخصوصية</h1>
+        <p>نلتزم في <strong>Alwisal</strong> بحماية خصوصيتك والتعامل مع بياناتك بمسؤولية وشفافية. باستخدامك التطبيق، فأنت توافق على هذه السياسة.</p>
 
-      <p>
-        نلتزم في <strong>Alwisal</strong> بحماية خصوصية المستخدمين والتعامل مع البيانات بشكل مسؤول وشفاف.
-        باستخدامك التطبيق، فإنك توافق على سياسة الخصوصية هذه.
-      </p>
+        <h2>1) البيانات التي نجمعها</h2>
+        <ul>
+          <li>بيانات الحساب (البريد الإلكتروني، اسم المستخدم، معرف الحساب).</li>
+          <li>بيانات الملف الشخصي التي تضيفها داخل التطبيق.</li>
+          <li>الصور والمحتوى داخل التطبيق.</li>
+          <li>بيانات الرسائل والإشعارات اللازمة لتشغيل الخدمة.</li>
+          <li>بيانات تقنية مرتبطة بالأداء والأمان والأعطال.</li>
+        </ul>
 
-      <h2>1) البيانات التي نجمعها</h2>
-      <ul>
-        <li>بيانات الحساب (البريد الإلكتروني، اسم المستخدم، معرف الحساب).</li>
-        <li>بيانات الملف الشخصي التي يضيفها المستخدم.</li>
-        <li>الصور والمحتوى داخل التطبيق.</li>
-        <li>بيانات الإشعارات والرسائل اللازمة لتشغيل الخدمة.</li>
-        <li>بيانات تقنية (الأعطال والأداء والأمان).</li>
-      </ul>
+        <h2>2) كيف نستخدم البيانات</h2>
+        <ul>
+          <li>تشغيل الحساب والخدمات الأساسية.</li>
+          <li>تحسين الأمان ومنع الإساءة والاحتيال.</li>
+          <li>تحسين جودة الخدمة وتجربة الاستخدام.</li>
+          <li>الامتثال للمتطلبات القانونية عند الحاجة.</li>
+        </ul>
 
-      <h2>2) استخدام البيانات</h2>
-      <ul>
-        <li>تشغيل الحساب والخدمات الأساسية داخل التطبيق.</li>
-        <li>تحسين الأمان ومنع الإساءة والاحتيال.</li>
-        <li>تحسين جودة الخدمة وتجربة الاستخدام.</li>
-        <li>الالتزام بالمتطلبات القانونية عند الضرورة.</li>
-      </ul>
+        <h2>3) مشاركة البيانات</h2>
+        <p>لا نقوم ببيع بياناتك الشخصية. قد تتم مشاركة الحد الأدنى اللازم مع مزودي خدمات موثوقين لتشغيل التطبيق.</p>
 
-      <h2>3) مشاركة البيانات</h2>
-      <p>
-        لا نقوم ببيع بياناتك الشخصية. قد تتم مشاركة الحد الأدنى اللازم مع مزودي خدمات موثوقين لتشغيل التطبيق.
-      </p>
+        <h2>4) التواصل</h2>
+        <p>البريد الإلكتروني: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a></p>
 
-      <h2>4) الاحتفاظ والحذف</h2>
-      <p>
-        نحتفظ بالبيانات للمدة اللازمة لتقديم الخدمة أو الامتثال القانوني.
-        ويمكنك طلب حذف حسابك وفق آلية الحذف داخل التطبيق.
-      </p>
-
-      <h2>5) الأمان</h2>
-      <p>
-        نطبّق تدابير أمان تقنية وتنظيمية معقولة، مع الإقرار بأن أي نظام إلكتروني لا يضمن أمانًا مطلقًا بنسبة 100%.
-      </p>
-
-      <h2>6) حقوق المستخدم</h2>
-      <p>
-        بحسب القوانين المطبقة في بلدك، قد يشمل ذلك حق الوصول، التصحيح، الحذف، أو الاعتراض على بعض المعالجات.
-      </p>
-
-      <h2>7) التواصل</h2>
-      <p>
-        البريد الإلكتروني: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a><br />
-        الجهة: عبدالله حمشو (مطور مستقل)
-      </p>
-
-      <div class="footer">© 2026 عبدالله حمشو - جميع الحقوق محفوظة.</div>
+        <div class="note">ننصح بعدم مشاركة بيانات تسجيل الدخول مع أي طرف وتأمين جهازك دائمًا.</div>
+        <div class="footer">© 2026 عبدالله حمشو — جميع الحقوق محفوظة.</div>
+      </div>
     </section>
 
     <!-- English -->
-    <section id="en" class="policy hidden" lang="en" dir="ltr">
-      <h1>Privacy Policy</h1>
-      <div class="meta">
-        App: <strong>Alwisal</strong><br />
-        Owner: <strong>Abdullah Hamsho (Independent Developer)</strong><br />
-        Last Updated: <strong>05/05/2026</strong>
+    <section id="policy-en" class="card policy-block hidden" lang="en" dir="ltr">
+      <div class="hero">
+        <div class="brand">
+          <img class="logo" src="./alwisal-logo.png" alt="Alwisal Logo" />
+          <div>
+            <p class="app-name">Alwisal</p>
+            <p class="subtitle">Privacy Policy</p>
+          </div>
+        </div>
+        <div class="meta">
+          Owner: Abdullah Hamsho (Independent Developer)<br />
+          Last updated: 05/05/2026
+        </div>
       </div>
+      <div class="content">
+        <h1>Privacy Policy</h1>
+        <p>At <strong>Alwisal</strong>, we are committed to protecting your privacy and handling data responsibly and transparently. By using the app, you agree to this policy.</p>
 
-      <p>
-        At <strong>Alwisal</strong>, we are committed to protecting user privacy and handling data responsibly and transparently.
-        By using the app, you agree to this Privacy Policy.
-      </p>
+        <h2>1) Data We Collect</h2>
+        <ul>
+          <li>Account data (email, username, account identifier).</li>
+          <li>Profile data you provide in the app.</li>
+          <li>Photos and in-app content.</li>
+          <li>Messaging and notification data needed to run the service.</li>
+          <li>Technical data related to performance, security, and crashes.</li>
+        </ul>
 
-      <h2>1) Data We Collect</h2>
-      <ul>
-        <li>Account data (email, username, account identifier).</li>
-        <li>Profile data provided by users.</li>
-        <li>Photos and in-app content.</li>
-        <li>Notification and messaging data required to run the service.</li>
-        <li>Technical data (crash, performance, and security signals).</li>
-      </ul>
+        <h2>2) How We Use Data</h2>
+        <ul>
+          <li>Operate accounts and core features.</li>
+          <li>Improve security and prevent abuse/fraud.</li>
+          <li>Improve service quality and user experience.</li>
+          <li>Comply with legal requirements where applicable.</li>
+        </ul>
 
-      <h2>2) How We Use Data</h2>
-      <ul>
-        <li>To operate accounts and core app features.</li>
-        <li>To improve security and prevent abuse/fraud.</li>
-        <li>To improve service quality and user experience.</li>
-        <li>To comply with legal obligations when required.</li>
-      </ul>
+        <h2>3) Data Sharing</h2>
+        <p>We do not sell your personal data. Limited data may be shared with trusted service providers strictly to operate the app.</p>
 
-      <h2>3) Data Sharing</h2>
-      <p>
-        We do not sell personal data. Limited data may be shared with trusted service providers strictly to operate the app.
-      </p>
+        <h2>4) Contact</h2>
+        <p>Email: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a></p>
 
-      <h2>4) Retention and Deletion</h2>
-      <p>
-        Data is retained only as needed for service delivery or legal compliance.
-        You may request account deletion through in-app account deletion flow.
-      </p>
-
-      <h2>5) Security</h2>
-      <p>
-        We apply reasonable technical and organizational safeguards, while acknowledging that no electronic system is 100% secure.
-      </p>
-
-      <h2>6) User Rights</h2>
-      <p>
-        Depending on your jurisdiction, rights may include access, correction, deletion, and objection to certain processing.
-      </p>
-
-      <h2>7) Contact</h2>
-      <p>
-        Email: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a><br />
-        Owner: Abdullah Hamsho (Independent Developer)
-      </p>
-
-      <div class="footer">© 2026 Abdullah Hamsho - All rights reserved.</div>
+        <div class="note">Please keep your credentials private and secure your device.</div>
+        <div class="footer">© 2026 Abdullah Hamsho — All rights reserved.</div>
+      </div>
     </section>
 
     <!-- Turkish -->
-    <section id="tr" class="policy hidden" lang="tr" dir="ltr">
-      <h1>Gizlilik Politikasi</h1>
-      <div class="meta">
-        Uygulama: <strong>Alwisal</strong><br />
-        Sahip: <strong>Abdullah Hamsho (Bagimsiz Gelistirici)</strong><br />
-        Son Guncelleme: <strong>05/05/2026</strong>
+    <section id="policy-tr" class="card policy-block hidden" lang="tr" dir="ltr">
+      <div class="hero">
+        <div class="brand">
+          <img class="logo" src="./alwisal-logo.png" alt="Alwisal Logo" />
+          <div>
+            <p class="app-name">Alwisal</p>
+            <p class="subtitle">Gizlilik Politikasi</p>
+          </div>
+        </div>
+        <div class="meta">
+          Sahip: Abdullah Hamsho (Bagimsiz Gelistirici)<br />
+          Son guncelleme: 05/05/2026
+        </div>
       </div>
+      <div class="content">
+        <h1>Gizlilik Politikasi</h1>
+        <p><strong>Alwisal</strong>, gizliliginizi korumayi ve verileri sorumlu/şeffaf sekilde islemeyi taahhut eder. Uygulamayi kullanarak bu politikayi kabul edersiniz.</p>
 
-      <p>
-        <strong>Alwisal</strong>, kullanici gizliligini korumayi ve verileri sorumlu/şeffaf sekilde islemeyi taahhut eder.
-        Uygulamayi kullanarak bu Gizlilik Politikasini kabul etmis olursunuz.
-      </p>
+        <h2>1) Toplanan Veriler</h2>
+        <ul>
+          <li>Hesap verileri (e-posta, kullanici adi, hesap kimligi).</li>
+          <li>Uygulamada girdiginiz profil verileri.</li>
+          <li>Fotograflar ve uygulama ici icerikler.</li>
+          <li>Mesajlasma ve bildirim verileri.</li>
+          <li>Performans/guvenlik/hata ile ilgili teknik veriler.</li>
+        </ul>
 
-      <h2>1) Toplanan Veriler</h2>
-      <ul>
-        <li>Hesap verileri (e-posta, kullanici adi, hesap kimligi).</li>
-        <li>Kullanicinin girdigi profil verileri.</li>
-        <li>Fotograflar ve uygulama ici icerikler.</li>
-        <li>Servisi calistirmak icin gerekli bildirim ve mesaj verileri.</li>
-        <li>Teknik veriler (hata, performans, guvenlik sinyalleri).</li>
-      </ul>
+        <h2>2) Verilerin Kullanimi</h2>
+        <ul>
+          <li>Hesaplari ve temel ozellikleri calistirmak.</li>
+          <li>Guvenligi guclendirmek, kotuye kullanimi onlemek.</li>
+          <li>Hizmet kalitesini ve deneyimi iyilestirmek.</li>
+          <li>Gereken durumlarda yasal uyumluluk saglamak.</li>
+        </ul>
 
-      <h2>2) Verilerin Kullanimi</h2>
-      <ul>
-        <li>Hesap ve temel uygulama ozelliklerini calistirmak.</li>
-        <li>Guvenligi artirmak, kotuye kullanim ve dolandiriciligi onlemek.</li>
-        <li>Hizmet kalitesini ve kullanici deneyimini iyilestirmek.</li>
-        <li>Gerekli durumlarda yasal yukumluluklere uymak.</li>
-      </ul>
+        <h2>3) Veri Paylasimi</h2>
+        <p>Kisisel veriler satilmaz. Veriler yalnizca uygulamayi calistirmak icin gerekli seviyede paylasilabilir.</p>
 
-      <h2>3) Veri Paylasimi</h2>
-      <p>
-        Kisisel veriler satilmaz. Uygulamanin calismasi icin gerekli sinirli veriler, guvenilir hizmet saglayicilarla paylasilabilir.
-      </p>
+        <h2>4) Iletisim</h2>
+        <p>E-posta: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a></p>
 
-      <h2>4) Saklama ve Silme</h2>
-      <p>
-        Veriler yalnizca hizmet sunumu veya yasal uyum icin gereken sure boyunca saklanir.
-        Kullanici, uygulama icindeki hesap silme akisi ile silme talebi gonderebilir.
-      </p>
-
-      <h2>5) Guvenlik</h2>
-      <p>
-        Makul teknik ve idari onlemler uygulanir; ancak hicbir elektronik sistem %100 guvenli degildir.
-      </p>
-
-      <h2>6) Kullanici Haklari</h2>
-      <p>
-        Bulundugunuz ulkeye gore erisim, duzeltme, silme ve belirli islemlere itiraz haklariniz olabilir.
-      </p>
-
-      <h2>7) Iletisim</h2>
-      <p>
-        E-posta: <a href="mailto:supportalwisaal@gmail.com">supportalwisaal@gmail.com</a><br />
-        Sahip: Abdullah Hamsho (Bagimsiz Gelistirici)
-      </p>
-
-      <div class="footer">© 2026 Abdullah Hamsho - Tum haklari saklidir.</div>
+        <div class="note">Giris bilgilerinizin gizliligini koruyun ve cihazinizi guvenceye alin.</div>
+        <div class="footer">© 2026 Abdullah Hamsho — Tum haklari saklidir.</div>
+      </div>
     </section>
-  </div>
+  </main>
 
   <script>
     (function () {
-      const buttons = document.querySelectorAll('[data-lang]');
-      const sections = {
-        ar: document.getElementById('ar'),
-        en: document.getElementById('en'),
-        tr: document.getElementById('tr')
+      const btns = document.querySelectorAll('.lang-btn');
+      const blocks = {
+        ar: document.getElementById('policy-ar'),
+        en: document.getElementById('policy-en'),
+        tr: document.getElementById('policy-tr')
       };
 
       function setLang(lang) {
-        Object.keys(sections).forEach((k) => {
-          sections[k].classList.toggle('hidden', k !== lang);
-        });
-
-        buttons.forEach((btn) => {
-          btn.classList.toggle('active', btn.dataset.lang === lang);
-        });
+        Object.keys(blocks).forEach((k) => blocks[k].classList.toggle('hidden', k !== lang));
+        btns.forEach((b) => b.classList.toggle('active', b.dataset.lang === lang));
 
         if (lang === 'ar') {
           document.documentElement.lang = 'ar';
@@ -248,10 +248,7 @@
         }
       }
 
-      buttons.forEach((btn) => {
-        btn.addEventListener('click', () => setLang(btn.dataset.lang));
-      });
-
+      btns.forEach((btn) => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
       setLang('ar');
     })();
   </script>
